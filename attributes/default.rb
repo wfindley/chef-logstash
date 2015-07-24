@@ -57,6 +57,7 @@ default['logstash']['instance_default']['config_templates_variables'] = {}
 
 default['logstash']['instance_default']['init_method'] = 'runit'
 default['logstash']['instance_default']['service_templates_cookbook']  = 'logstash'
+default['logstash']['instance_default']['runit_timeout'] = 7
 
 # default locations for runit templates
 default['logstash']['instance_default']['runit_run_template_name'] = 'logstash'

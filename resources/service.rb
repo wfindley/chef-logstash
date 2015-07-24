@@ -20,3 +20,4 @@ attribute :group, kind_of: String
 attribute :templates_cookbook, kind_of: String
 attribute :runit_run_template_name, kind_of: String
 attribute :runit_log_template_name, kind_of: String
+attribute :runit_timeout, kind_of: Integer

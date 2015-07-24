@@ -34,6 +34,7 @@ def load_current_resource
   @supervisor_gid = Logstash.get_attribute_or_default(node, @instance, 'supervisor_gid')
   @runit_run_template_name = Logstash.get_attribute_or_default(node, @instance, 'runit_run_template_name')
   @runit_log_template_name = Logstash.get_attribute_or_default(node, @instance, 'runit_log_template_name')
+  @runit_timeout = Logstash.get_attribute_or_default(node, @instance, 'runit_timeout')
   @nofile_soft = Logstash.get_attribute_or_default(node, @instance, 'limit_nofile_soft')
   @nofile_hard = Logstash.get_attribute_or_default(node, @instance, 'limit_nofile_hard')
 end
